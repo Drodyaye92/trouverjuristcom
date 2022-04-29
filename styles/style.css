@@ -1,53 +1,65 @@
-        .numero {
-            color: black;
-        }
-        
-        .menu {
-            background-color: rgb(18, 165, 170);
-            text-align: center;
-            color: rgb(248, 245, 245);
-        }
-        
-        .phrase {
-            text-align: center;
-            color: black;
-            font-size: large;
-            font-family: Arial, Helvetica, sans-serif;
-            font-weight: lighter;
-            justify-content: center;
-        }
-        
-        .dessus {
-            z-index: 2;
-            /* margin-top: 120px; */
-            background-color: rgba(206, 119, 37, 0.644);
-        }
-        
-        .vertical {
-            border-left: 1px solid black;
-            height: 270px;
-            display: inline-block;
-        }
-        
-        .hyper {
-            text-align: center;
-            color: black;
-            font-size: 40px;
-            font-family: Arial, Helvetica, sans-serif;
-            font-weight: 700px;
-            justify-content: center;
-        }
-        
-        .couleur {
-            background-color: aliceblue;
-        }
-        
-        .titres {
-            /* // background-color: rgb(64, 158, 163); */
-            background-color: rgb(18, 165, 170);
-            ;
-        }
-        /* .ligne_horizontal {
+            * {
+                font-family: 'Times New Roman', Times, serif;
+            }
+            
+            .numero {
+                color: black;
+            }
+            
+            .menu {
+                background-color: rgb(18, 165, 170);
+                text-align: center;
+                color: rgb(248, 245, 245);
+            }
+            
+            .phrase {
+                text-align: center;
+                color: black;
+                font-size: large;
+                font-family: Arial, Helvetica, sans-serif;
+                font-weight: lighter;
+                justify-content: center;
+            }
+            
+            .dessus {
+                z-index: 2;
+                /* margin-top: 120px; */
+                background-color: rgba(206, 119, 37, 0.644);
+            }
+            
+            .vertical {
+                border-left: 1px solid black;
+                height: 270px;
+                display: inline-block;
+            }
+            
+            .hyper {
+                text-align: center;
+                color: black;
+                font-size: 40px;
+                font-family: Arial, Helvetica, sans-serif;
+                font-weight: 700px;
+                justify-content: center;
+            }
+            
+            .couleur {
+                background-color: aliceblue;
+            }
+            
+            .titres {
+                /* // background-color: rgb(64, 158, 163); */
+                background-color: rgb(18, 165, 170);
+                ;
+            }
+            
+            .nav-links {
+                color: white;
+                text-decoration: none;
+                justify-self: center;
+                text-align: justify;
+                text-justify: auto;
+            }
+            /* .ligne_horizontal {
     display: flex;
     flex-direction: row;
 }
@@ -58,35 +70,52 @@
     border-bottom: 1px solid rgb(104, 102, 102);
     margin: auto;
 } */
-        
-        .accueil {
-            background-image: url("../images/marteau.jpg");
-            background-size: contain;
-            background-size: cover;
-            background-repeat: no-repeat;
-            height: 600px;
-            text-align: center;
-            object-fit: contain;
-            /* transform: translate(-50%, -50%); */
-        }
-        
-        .over {
-            color: rgb(14, 13, 13);
-            position: absolute;
-            margin-top: 250px;
-            margin-left: 40px;
-            font-style: normal;
-            font-weight: bolder;
-            font-size: 48px;
-            justify-content: center;
-            justify-items: center;
-        }
-        
-        .paragraph {
-            text-decoration-line: overline underline;
-            transform: scale();
-        }
-        /* .paralaxe {
+            
+            .accueil {
+                background-image: url("../images/marteau.jpg");
+                background-repeat: no-repeat;
+                background-attachment: fixed;
+                text-align: center;
+                background-position: center center;
+                justify-content: center;
+                background-size: cover;
+                height: 650px;
+                max-width: 100%;
+            }
+            
+            @media only screen and (max-width:768px) {
+                .navbar-brand {
+                    max-width: 100px;
+                }
+                .navbar-toggler {
+                    right: 0;
+                    position: absolute;
+                    margin: 10px;
+                }
+            }
+            
+            .over {
+                color: rgb(14, 13, 13);
+                position: absolute;
+                margin-top: 250px;
+                margin-left: 40px;
+                font-style: normal;
+                font-weight: bolder;
+                font-size: 48px;
+                justify-content: center;
+                justify-items: center;
+            }
+            
+            .paragraph {
+                text-decoration-line: overline underline;
+                transform: scale();
+            }
+            
+            .tire {
+                font-size: 40px;
+                font-weight: 700;
+            }
+            /* .paralaxe {
     background-image: url("../images/justitia-g3bdcce1ef_1920.jpg");
     background-size: contain;
     background-size: cover;
@@ -94,87 +123,89 @@
     background-repeat: no-repeat;
     height: 600%;
 } */
-        
-        .backfix {
-            background-image: url("../images/scroll.jpg");
-            background-repeat: none;
-            background-attachment: fixed;
-            display: flex;
-            justify-content: center;
-            background-size: cover;
-        }
-        
-        .scroll {
-            width: auto;
-            height: 300px;
-            text-align: center;
-            margin-top: 50px;
-            /* margin-bottom: 50px; */
-            background-color: rgba(0, 255, 255, 0.212);
-        }
-        
-        .card-header {
-            background-color: rgb(18, 165, 170);
-        }
-        
-        .transition {
-            width: auto;
-            height: 200px;
-            text-align: center;
-            margin-top: 100px;
-            margin-bottom: 50px;
-            /* background-color: white; */
-            /* color: rgb(18, 165, 170); */
-        }
-        
-        .profil {
-            height: 200px;
-            width: 252px;
-        }
-        
-        .color {
-            background-color: rgb(240, 129, 25);
-            ;
-        }
-        
-        .footer {
-            height: 50px;
-        }
-        
-        .linestyle {
-            display: block;
-            background-color: #ff8800;
-            width: 48px;
-            height: 8px;
-            border-radius: 8px;
-            -webkit-border-radius: 8px;
-        }
-        
-        .rond {
-            border-radius: 10%;
-            width: 550px;
-        }
-        
-        .ligne_horizontal {
-            display: flex;
-            flex-direction: row;
-        }
-        
-        .ligne_horizontal:before,
-        .ligne_horizontal:after {
-            content: "";
-            flex: 1 1;
-            border-bottom: 2px solid #000;
-            margin: auto;
-        }
-        
-        .center {
-            display: block;
-            margin-left: auto;
-            margin-right: auto;
-            width: 50%;
-        }
-        
-        .colorback {
-            background-color: rgba(129, 180, 198, 0.644);
-        }
+            
+            .backfix {
+                background-image: url("../images/scroll.jpg");
+                background-repeat: none;
+                background-attachment: fixed;
+                display: flex;
+                justify-content: center;
+                background-size: cover;
+            }
+            
+            .scroll {
+                width: auto;
+                height: 300px;
+                text-align: center;
+                margin-top: 50px;
+                /* margin-bottom: 50px; */
+                background-color: rgba(0, 255, 255, 0.212);
+            }
+            
+            .card-header {
+                background-color: rgb(18, 165, 170);
+            }
+            
+            .transition {
+                width: auto;
+                height: 200px;
+                text-align: center;
+                margin-top: 100px;
+                margin-bottom: 50px;
+                /* background-color: white; */
+                /* color: rgb(18, 165, 170); */
+            }
+            
+            .profil {
+                height: 250px;
+                width: 255px;
+                box-shadow: 10px;
+            }
+            
+            .color {
+                background-color: rgb(240, 129, 25);
+                ;
+            }
+            
+            .footer {
+                height: auto;
+            }
+            
+            .linestyle {
+                display: block;
+                background-color: #ff8800;
+                width: 48px;
+                height: 8px;
+                border-radius: 8px;
+                -webkit-border-radius: 8px;
+            }
+            
+            .rond {
+                border-radius: 5%;
+                width: 550px;
+            }
+            
+            .ligne_horizontal {
+                display: flex;
+                flex-direction: row;
+            }
+            
+            .ligne_horizontal:before,
+            .ligne_horizontal:after {
+                content: "";
+                flex: 1 1;
+                border-bottom: 2px solid #000;
+                margin: auto;
+            }
+            
+            .center {
+                display: block;
+                margin-left: auto;
+                margin-right: auto;
+                width: 50%;
+            }
+            
+            .colorback {
+                background-color: rgba(129, 180, 198, 0.644);
+                margin-top: -350px;
+            }
